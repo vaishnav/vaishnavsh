@@ -1,4 +1,4 @@
-$primary:#0E1F39; 
+@use "Variables";
 
 html,body
 {
@@ -7,7 +7,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-    background-color: $primary;
+    background-color: Variables.$primary;
     color: white;
 }
 
