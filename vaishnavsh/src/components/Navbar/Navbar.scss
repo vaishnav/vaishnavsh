@@ -3,15 +3,27 @@
 // desktop view
 .desktop-view{
     display: flex;
-    padding: 0px 20px;
+    padding: 0px 25px;
 
     .home {
         margin-right: auto !important;
     }
 
     .nav-element {
-        margin: 10px;
+        margin: 20px;
+        text-decoration: none;
+        color: #cccccc;
+        font-size: 1.1rem;
+
+        &:hover {
+            color: #fff;
+            font-weight: 500;
+        }
     }
+}
+
+.active {
+    color: Variables.$highlight !important;
 }
 
 // mobile view
