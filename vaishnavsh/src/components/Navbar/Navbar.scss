@@ -1,0 +1,26 @@
+// desktop view
+.desktop-view{
+    display: flex;
+    padding: 0px 20px;
+
+    .home {
+        margin-right: auto !important;
+    }
+
+    .nav-element {
+        margin: 10px;
+    }
+}
+
+// mobile view
+@media all and (max-width:425px) {
+    .desktop-view{
+        display: none;
+    }
+}
+
+@media all and (min-width: 426px) {
+    .mobile-view{
+        display: none;
+    }
+}
