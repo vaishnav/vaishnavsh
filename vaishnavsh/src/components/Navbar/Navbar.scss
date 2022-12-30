@@ -12,28 +12,65 @@
     .nav-element {
         margin: 20px;
         text-decoration: none;
-        color: #cccccc;
+        color: Variables.$light-white;
         font-size: 1.1rem;
 
         &:hover {
             color: #fff;
         }
     }
+
+    .active {
+        color: Variables.$highlight !important;
+    }
 }
 
-.active {
-    color: Variables.$highlight !important;
-}
 
 // mobile view
-@media all and (max-width:425px) {
+.mobile-view{
+    border-radius: 30px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    bottom: 1.5rem;
+    background-color: transparentize($color: Variables.$dark-white, $amount: 0.6);
+    backdrop-filter: blur(15px);
+    padding: 3px 30px 0 30px;
+
+    .nav-icon {
+        color: Variables.$light-white;
+        font-size: 1.25em;
+        padding: 10px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+
+    a {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .active {
+        .nav-icon {
+            color: Variables.$highlight;
+            background-color: transparentize($color: lighten($color: Variables.$highlight, $amount: 30%), $amount: 0.8);
+        }
+    }
+}
+
+// Switching Views
+@media all and (max-width:525px) {
     .desktop-view{
         display: none;
     }
 }
 
-@media all and (min-width: 426px) {
+@media all and (min-width: 526px) {
     .mobile-view{
         display: none;
-    }
+    } 
 }
