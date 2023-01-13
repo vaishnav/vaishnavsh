@@ -1,3 +1,5 @@
+@use "../../Variables";
+
 .header {
     // display: flex;
 
@@ -7,6 +9,22 @@
         left: 7rem;
         width: 40%;
         z-index: 6;
+        h4 {
+            color: Variables.$highlight;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        .header-name {
+            font-size: 3rem;
+            font-weight: 500;
+            margin: 0px;
+        }
+        .header-about {
+            font-size: 1.75rem;
+            font-weight: 300;
+            margin-top: 0px;
+            color: Variables.$light-white;
+        }
     }
 
     .right {

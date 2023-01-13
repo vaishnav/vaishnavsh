@@ -1,5 +1,9 @@
-$primary:#0E1F39; 
+$primary:#081427; 
 $test: white;
 $highlight: #ff5dbe;
 $light-white: #cccccc;
 $dark-white: #4d4d4d;
+
+@mixin glow {
+    text-shadow: 0 0 7px $highlight;
+}
