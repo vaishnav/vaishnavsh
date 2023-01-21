@@ -9,6 +9,9 @@
     border: solid 1px Variables.$highlight;
     width: 100%;
     margin-bottom: 2rem;
+    &:focus{
+        outline: none;
+    }
 }
 
 .contact-form{
