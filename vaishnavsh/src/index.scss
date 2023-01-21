@@ -31,3 +31,16 @@ background: #6649b8;
 .container {
     margin: 0 10% 0 10%;
 }
+
+.default-button {
+    padding: 3px 10px; 
+    border-radius: 7px;
+    font-size: large;
+    background-color: transparentize($color: Variables.$highlight, $amount: 0.9);
+    color: #fff;
+    border: 2px solid Variables.$highlight;
+    cursor: pointer;
+    &:hover {
+        @include Variables.glow;
+    }
+}

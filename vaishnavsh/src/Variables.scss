@@ -5,5 +5,5 @@ $light-white: #cccccc;
 $dark-white: #4d4d4d;
 
 @mixin glow {
-    filter: drop-shadow(0 0 1rem $highlight);
+    filter: drop-shadow(0 0 0.5rem $highlight);
 }
