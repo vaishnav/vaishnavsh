@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.51.22",
     "@react-three/fiber": "^8.10.0",
     "@splinetool/loader": "^0.9.178",
