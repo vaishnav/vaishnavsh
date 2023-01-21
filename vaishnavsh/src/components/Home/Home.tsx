@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import './Home.scss'
 import Table from '../Table/Table'
 
@@ -36,6 +37,7 @@ const Home = () => {
           <a className="quick-nav-item" href='https://ue837ee2a.artstation.com/' target="_blank"><FaArtstation/></a>
           <a className="quick-nav-item" href='https://www.instagram.com/vaishnav_1024/' target="_blank"><FiInstagram/></a>
         </div>
+        <Link to="/contact" className='default-button'>Contact</Link>
       </div>
       <div className="right">
         <Table></Table>

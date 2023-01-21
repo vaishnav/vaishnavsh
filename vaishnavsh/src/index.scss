@@ -34,6 +34,7 @@ background: #6649b8;
 
 .default-button {
     padding: 3px 10px; 
+    text-decoration: none;
     border-radius: 7px;
     font-size: large;
     background-color: transparentize($color: Variables.$highlight, $amount: 0.9);
