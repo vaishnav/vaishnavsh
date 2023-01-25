@@ -41,7 +41,7 @@ background: #6649b8;
     color: #fff;
     border: 2px solid Variables.$highlight;
     cursor: pointer;
-    &:hover {
-        @include Variables.glow;
-    }
+    // &:hover {
+    //     @include Variables.glow;
+    // }
 }
