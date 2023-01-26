@@ -1,14 +1,16 @@
 @use "../../Variables";
 
 .header {
-    // display: flex;
+    display: flex;
 
     .left {
-        margin-top: 8%;
-        position: absolute;
-        left: 7rem;
-        width: 40%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        // position: relative;
+        // left: 7rem;
+        // width: 40%;
         z-index: 6;
+        flex: 1;
         h4 {
             color: Variables.$highlight;
             margin-top: 0px;
@@ -40,10 +42,11 @@
     }
 
     .right {
-        position: absolute;
-        right: 0;
-        width: 50%;
-        height: 80%;
+        // position: relative;
+        // right: 0;
+        // width: 50%;
+        // height: 80%;
+        flex: 1;
         z-index: 5;
         .loading {
             display: flex;
@@ -52,5 +55,16 @@
             height: 100%;
             color: white;
         }
+    }
+}
+
+.mid-section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        text-align: center;
+        font-size: 3rem;
     }
 }
