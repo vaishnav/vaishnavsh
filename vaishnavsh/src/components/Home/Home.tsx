@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import './Home.scss'
 import Table from '../Table/Table'
+import Contact from '../Contact/Contact';
 
 import { FiMail } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
@@ -25,12 +26,6 @@ const Home = () => {
           <p className="header-about">
               Programmer, Problem-Solver, 3D-Artist and a GEEK.
           </p>
-          {/* <div className="">
-              Hi, I am Vaishnav Sharma. I like making interesting projects,
-              learning new technologies and solving problems.
-              I have made projects in web-development, image processing,
-              and 3D animation.
-          </div> */}
           <div className="header-quick-nav">
             <a className="quick-nav-item" href='mailto:vaishnav291999@gmail.com'><FiMail/></a>
             <a className="quick-nav-item" href='https://www.linkedin.com/in/vaishnav-sharma-1952681a3/' target="_blank"><FiLinkedin/></a>
@@ -38,7 +33,7 @@ const Home = () => {
             <a className="quick-nav-item" href='https://ue837ee2a.artstation.com/' target="_blank"><FaArtstation/></a>
             <a className="quick-nav-item" href='https://www.instagram.com/vaishnav_1024/' target="_blank"><FiInstagram/></a>
           </div>
-          <Link to="/contact" className='default-button'>Contact</Link>
+          {/* <Link to="/contact" className='default-button'>Contact</Link> */}
         </div>
         <div className="right">
           <Table></Table>
@@ -46,8 +41,11 @@ const Home = () => {
       </div>
       <div className="container mid-section">
         <h1>
-          I am a technology enthusiast and like to work on real world projects. I've built things in the fields of web developemnt and 3D art. 
+          I am a Technology Enthusiast and like to work on real world projects. I've built things in the fields of web developemnt and 3D art. 
         </h1>
+      </div>
+      <div>
+        <Contact></Contact>
       </div>
     </>
   )

@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link to="/" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome className='nav-icon'/></Link>
         <Link to="/project" onClick={() => setActiveNav('#project')} className={activeNav === '#project' ? 'active' : ''}><AiOutlineFundProjectionScreen className='nav-icon'/></Link>
         {/* <Link to="/gallery" onClick={() => setActiveNav('#gallery')} className={activeNav === '#gallery' ? 'active' : ''}><BsBox className='nav-icon'/></Link> */}
-        <Link to="/contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><TbMessage className='nav-icon'/></Link>
+        {/* <Link to="/contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><TbMessage className='nav-icon'/></Link> */}
         <Link to="/resume" onClick={() => setActiveNav('#resume')} className={activeNav === '#resume' ? 'active' : ''}><HiOutlineDocumentText className='nav-icon'/></Link>
       </div>
 
@@ -25,7 +25,7 @@ const Navbar = () => {
         <Link to="/" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'nav-element home active' : 'home nav-element'}>Home</Link>
         <Link to="/project" onClick={() => setActiveNav('#project')} className={activeNav === '#project' ? 'nav-element active' : 'nav-element'}>Projects</Link>
         {/* <Link to="/gallery" onClick={() => setActiveNav('#gallery')} className={activeNav === '#gallery' ? 'nav-element active' : 'nav-element'}>3D Art</Link> */}
-        <Link to="/contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'nav-element active' : 'nav-element'}>Contact</Link>
+        {/* <Link to="/contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'nav-element active' : 'nav-element'}>Contact</Link> */}
         <Link to="/resume" onClick={() => setActiveNav('#resume')} className={activeNav === '#resume' ? 'nav-element active' : 'nav-element'}>Resume</Link>
       </div>
     </nav>
