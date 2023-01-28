@@ -1,0 +1,14 @@
+.project-body {
+    display: flex;
+    margin: 10% 0;
+    .project-info {
+        flex: 2;
+    }
+    .project-image {
+        flex: 1;
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}

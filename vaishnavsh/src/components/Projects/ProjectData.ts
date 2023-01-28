@@ -1,9 +1,11 @@
 interface ProjectInfo {
     name: string;
+    projectType: string;
+    description: string;
     stack: string[];
     source: string;
     demo: string;
-    image: File;
+    image: string;
 }
 
 export default ProjectInfo
