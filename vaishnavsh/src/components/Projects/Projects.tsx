@@ -10,7 +10,7 @@ const projectsList:ProjectInfo[] = [
   {
     name: "Three Js Rocket Scene",
     projectType: "Three Js Project",
-    description: "A three js scene with PSLV. Just completed three js journey course, and to test what I've learned, decided to make a small scene integrating threejs with HTML.Made a low poly PSLV model in blender, UV unwrapped it, baked the textures, and exported it. Imported the model into threejs, and integrated it with the HTML loading screen and some other HTML elements. Hosted the whole project on Github Pages. Along with threejs, Vite js was used.",
+    description: "A Three Js scene with PSLV model. The scene can be navigated with simple orbit controls and more information can be viewed while hovering the HTML cards. The scene made using Three Js, Blender, and Vite Js.",
     stack: ["Three Js","Vite","HTML","CSS"],
     source: "https://github.com/vaishnav/threejs_rockets",
     demo: "https://vaishnav.github.io/threejs_rockets/",

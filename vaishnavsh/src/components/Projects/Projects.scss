@@ -1,11 +1,33 @@
+@use "../../Variables";
+
 .project-body {
     display: flex;
-    margin: 10% 0;
+    margin: 5% 0%;
+    padding: 5% 5%;
+    border: 0.5px solid Variables.$highlight;
+    border-radius: 30px;
+    background-color: transparentize($color: Variables.$highlight, $amount: 0.98);
+    &:hover {
+        background-color: transparentize($color: Variables.$highlight, $amount: 1);
+    }
     .project-info {
-        flex: 2;
+        flex: 3;
+        font-weight: 500;
+        .project-type {
+            color: Variables.$grayish;
+            font-size: 1rem;
+        }
+        .project-name {
+            font-size: 1.5rem;
+        }
+        .project-description {
+            color: Variables.$grayish;
+            margin: 1rem 1rem 1rem 0px;
+            font-size: 1rem;
+        }
     }
     .project-image {
-        flex: 1;
+        flex: 2;
         img {
             width: 100%;
             border-radius: 10px;
