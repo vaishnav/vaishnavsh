@@ -30,11 +30,18 @@
                 font-size: 1rem;
             }
             .project-links {
-                font-size: 2rem;
-                margin: 0.5rem;
+                font-size: 1.5rem;
+                margin: 1rem;
                 a {
+                    margin-right: 0.7rem;
                     color: white;
                 }
+            }
+            .project-stacks {
+                margin-left: 1rem;
+                display: flex;
+                gap: 0.5rem;
+                color: Variables.$highlight;
             }
         }
         .project-image {

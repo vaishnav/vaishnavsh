@@ -43,6 +43,9 @@ const Project = (props:ProjectProps) => {
                     {sourceIcon}
                     {deployedIcon}
                 </div>
+                <div className="project-stacks">
+                    {project.stack.map((stack)=>(<div>{stack}</div>))}
+                </div>
             </div>
         </div>
     )
