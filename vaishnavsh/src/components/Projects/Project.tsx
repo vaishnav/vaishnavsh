@@ -13,19 +13,22 @@ const Project = (props:ProjectProps) => {
     const project = props.project 
 
     if(project.source != ""){
-        sourceIcon = <a href={project.source}><HiOutlineCode></HiOutlineCode></a>
+        sourceIcon = <a href={project.source} target="_blank"><HiOutlineCode></HiOutlineCode></a>
     } else {
         sourceIcon = null
     }
 
     if(project.demo != ""){
-        deployedIcon = <a href={project.source}><HiExternalLink></HiExternalLink></a>
+        deployedIcon = <a href={project.source} target="_blank"><HiExternalLink></HiExternalLink></a>
     } else {
         deployedIcon = null
     }
 
     return (
         <div className="project-body">
+            <div className='project-image'>
+                <img src={project.image} alt="" />
+            </div>
             <div className="project-info">
                 <div className="project-type">
                     {project.projectType.toUpperCase()}
@@ -40,9 +43,6 @@ const Project = (props:ProjectProps) => {
                     {sourceIcon}
                     {deployedIcon}
                 </div>
-            </div>
-            <div className='project-image'>
-                <img src={project.image} alt="" />
             </div>
         </div>
     )
