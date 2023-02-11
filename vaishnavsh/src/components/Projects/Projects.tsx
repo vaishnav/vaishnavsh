@@ -10,7 +10,7 @@ const projectsList:ProjectInfo[] = [
   {
     name: "Three Js Rocket Scene",
     projectType: "Three Js Project",
-    description: "A Three Js scene with PSLV model. The scene can be navigated with simple orbit controls and more information can be viewed while hovering the HTML cards. The scene made using Three Js, Blender, and Vite Js.",
+    description: "Lorem ipsum dolor sit amet, omnis invenire necessitatibus mea at, mutat soleat mea ea. ",
     stack: ["Three Js","Vite","HTML","CSS"],
     source: "https://github.com/vaishnav/threejs_rockets",
     demo: "https://vaishnav.github.io/threejs_rockets/",
@@ -19,7 +19,7 @@ const projectsList:ProjectInfo[] = [
   {
     name: "Maze Generator/Solver",
     projectType: "Path Finding Algorithms Project",
-    description: "Generating non-perfect mazes and solving them with different algorithms (GUI),Maze is generated using recursive backtracking and than randomly erasing walls between blocks to generate non-perfect maze. Generated maze can be solved with various graph algorithms",
+    description: "Lorem ipsum dolor sit amet, omnis invenire necessitatibus mea at, mutat soleat mea ea. ",
     stack: ["Python","Pygame","DSA"],
     source: "https://github.com/vaishnav/maze_generator_solver",
     demo: "",
@@ -28,7 +28,7 @@ const projectsList:ProjectInfo[] = [
   {
     name: "Three Js Rocket Scene",
     projectType: "Three Js Project",
-    description: "A Three Js scene with PSLV model. The scene can be navigated with simple orbit controls and more information can be viewed while hovering the HTML cards. The scene made using Three Js, Blender, and Vite Js.",
+    description: "Lorem ipsum dolor sit amet, omnis invenire necessitatibus mea at, mutat soleat mea ea. ",
     stack: ["Three Js","Vite","HTML","CSS"],
     source: "https://github.com/vaishnav/threejs_rockets",
     demo: "https://vaishnav.github.io/threejs_rockets/",
@@ -37,7 +37,7 @@ const projectsList:ProjectInfo[] = [
   {
     name: "Maze Generator/Solver",
     projectType: "Path Finding Algorithms Project",
-    description: "Generating non-perfect mazes and solving them with different algorithms (GUI),Maze is generated using recursive backtracking and than randomly erasing walls between blocks to generate non-perfect maze. Generated maze can be solved with various graph algorithms",
+    description: "Lorem ipsum dolor sit amet, omnis invenire necessitatibus mea at, mutat soleat mea ea. ",
     stack: ["Python","Pygame","DSA"],
     source: "https://github.com/vaishnav/maze_generator_solver",
     demo: "",
@@ -46,7 +46,7 @@ const projectsList:ProjectInfo[] = [
   {
     name: "Three Js Rocket Scene",
     projectType: "Three Js Project",
-    description: "A Three Js scene with PSLV model. The scene can be navigated with simple orbit controls and more information can be viewed while hovering the HTML cards. The scene made using Three Js, Blender, and Vite Js.",
+    description: "Lorem ipsum dolor sit amet, omnis invenire necessitatibus mea at, mutat soleat mea ea. ",
     stack: ["Three Js","Vite","HTML","CSS"],
     source: "https://github.com/vaishnav/threejs_rockets",
     demo: "https://vaishnav.github.io/threejs_rockets/",
@@ -55,7 +55,7 @@ const projectsList:ProjectInfo[] = [
   {
     name: "Maze Generator/Solver",
     projectType: "Path Finding Algorithms Project",
-    description: "Generating non-perfect mazes and solving them with different algorithms (GUI),Maze is generated using recursive backtracking and than randomly erasing walls between blocks to generate non-perfect maze. Generated maze can be solved with various graph algorithms",
+    description: "Lorem ipsum dolor sit amet, omnis invenire necessitatibus mea at, mutat soleat mea ea. ",
     stack: ["Python","Pygame","DSA"],
     source: "https://github.com/vaishnav/maze_generator_solver",
     demo: "",

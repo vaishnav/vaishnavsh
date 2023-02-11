@@ -7,16 +7,17 @@
     .project-body {
         display: flex;
         flex-direction: column;
-        padding: 5% 5%;
-        border: 0.5px solid Variables.$highlight;
-        border-radius: 30px;
-        background-color: transparentize($color: Variables.$highlight, $amount: 0.98);
+        // padding: 5% 5%;
+        // border: 0.5px solid Variables.$highlight;
+        border-radius: 15px;
+        background-color: transparentize($color: Variables.$primary, $amount: 0);
         &:hover {
-            background-color: transparentize($color: Variables.$highlight, $amount: 1);
+            background-color: transparentize($color: Variables.$primary, $amount: 0);
         }
         .project-info {
             flex: 3;
             font-weight: 500;
+            padding: 5%;
             .project-type {
                 color: Variables.$grayish;
                 font-size: 1rem;
@@ -48,7 +49,8 @@
             flex: 2;
             img {
                 width: 100%;
-                border-radius: 10px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
             }
         }
     }
