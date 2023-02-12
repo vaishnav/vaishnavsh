@@ -2,6 +2,7 @@ import React from 'react'
 import './Projects.scss'
 import ProjectInfo from './ProjectData'
 import Project from './Project'
+import Heading from '../Heading/Heading'
 
 import projectOne from '../../assets/projects/project1.png'
 import projectTwo from '../../assets/projects/project2.png'
@@ -65,9 +66,12 @@ const projectsList:ProjectInfo[] = [
 
 const Projects = () => {
   return (
-    <div className="container project-layout">
-      {projectsList.map((project)=>(<Project key={project.name} project={project}></Project>))}
-    </div>
+    <>
+      <Heading header='Projects' info='Some of my Recent Projets, feel free to check Source or Demo'></Heading>
+      <div className="container project-layout">
+        {projectsList.map((project)=>(<Project key={project.name} project={project}></Project>))}
+      </div>
+    </>
   )
 }
 
