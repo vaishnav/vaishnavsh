@@ -11,6 +11,7 @@
         // border: 0.5px solid Variables.$highlight;
         border-radius: 15px;
         background-color: transparentize($color: Variables.$primary, $amount: 0);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.397);
         &:hover {
             background-color: transparentize($color: Variables.$primary, $amount: 0);
         }
