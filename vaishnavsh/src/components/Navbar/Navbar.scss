@@ -5,26 +5,34 @@
     display: flex;
     padding: 0px 7%;
 
-    .home {
-        margin-right: auto !important;
-    }
 
     .nav-element {
         margin: 20px;
         text-decoration: none;
-        color: Variables.$light-white;
-        font-size: 1.2rem;
-        font-weight: 500;
+        // color: Variables.$light-white;
+        color: white;
+        font-family: 'Sofia Sans Semi Condensed', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
 
-        &:hover {
-            color: #fff;
-        }
+        // &:hover {
+        //     color: #fff;
+        // }
     }
 
-    .active {
-        color: Variables.$highlight !important;
-        @include Variables.glow;
+    .home {
+        margin-right: auto !important;
+        // color: linear-gradient(90deg, rgba(255,15,123,1) 0%, rgba(248,155,41,1) 100%);
+        background: linear-gradient(90deg, #ff8282 0%, #f0af7a 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
+
+    // .active {
+    //     color: Variables.$highlight !important;
+    //     @include Variables.glow;
+    // }
 }
 
 
