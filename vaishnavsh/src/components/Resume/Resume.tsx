@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Resume.scss'
 import { Document, Page } from 'react-pdf/dist/esm/entry.vite'
+import Heading from '../Heading/Heading';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 
@@ -19,6 +20,7 @@ const Resume = () => {
 
   return (
     <div className='container'>
+      <Heading header='Resume' info='My Updated Resume, take a look and feel free to connect.'></Heading>
       <Document file={resumeLink} className='resume-pdf'>
         <Page pageNumber={1} width={width}/>
       </Document>
