@@ -26,13 +26,13 @@ const Project = (props:ProjectProps) => {
 
     return (
         <div className="project-body">
-            <div className='project-image'>
+            {/* <div className='project-image'>
                 <img src={project.image} alt="" />
-            </div>
+            </div> */}
             <div className="project-info">
-                <div className="project-type">
+                {/* <div className="project-type">
                     {project.projectType.toUpperCase()}
-                </div>
+                </div> */}
                 <div className="project-name">
                     {project.name}
                 </div>

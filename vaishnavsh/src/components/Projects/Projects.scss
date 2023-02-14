@@ -25,11 +25,12 @@
             }
             .project-name {
                 font-size: 1.5rem;
+                color: Variables.$highlight;
             }
             .project-description {
-                color: Variables.$grayish;
                 margin: 1rem 1rem 1rem 0rem;
                 font-size: 1rem;
+                font-weight: 400;
             }
             .project-links {
                 font-size: 1.5rem;
@@ -42,7 +43,9 @@
             .project-stacks {
                 display: flex;
                 gap: 0.5rem;
-                color: Variables.$highlight;
+                color: Variables.$grayish;
+                font-weight: 100;
+                font-size: 0.9rem;
             }
         }
         .project-image {

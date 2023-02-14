@@ -11,7 +11,7 @@ const projectsList:ProjectInfo[] = [
   {
     name: "Three Js Rocket Scene",
     projectType: "Three Js Project",
-    description: "Lorem ipsum dolor sit amet, omnis invenire necessitatibus mea at, mutat soleat mea ea. ",
+    description: "Lorem ipsum dolor sit amet, omnis invenire necessitatibus mea at, mutat soleat mea ea.Lorem ipsum dolor sit amet, omnis invenire necessitatibus mea at, mutat soleat mea ea. ",
     stack: ["Three Js","Vite","HTML","CSS"],
     source: "https://github.com/vaishnav/threejs_rockets",
     demo: "https://vaishnav.github.io/threejs_rockets/",
