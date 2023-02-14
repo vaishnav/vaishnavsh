@@ -59,7 +59,7 @@ const projectsList:ProjectInfo[] = [
 const Projects = () => {
   return (
     <>
-      <Heading header='Projects' info='Some of my Recent Projets, feel free to check Source or Demo'></Heading>
+      <Heading header='My Projects' info='Some of my Recent Projets, feel free to check Source or Demo'></Heading>
       <div className="container project-layout">
         {projectsList.map((project)=>(<Project key={project.name} project={project}></Project>))}
       </div>
