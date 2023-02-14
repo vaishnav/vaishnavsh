@@ -5,7 +5,7 @@ interface ProjectInfo {
     stack: string[];
     source: string;
     demo: string;
-    image: string;
+    // image: string;
 }
 
 export default ProjectInfo

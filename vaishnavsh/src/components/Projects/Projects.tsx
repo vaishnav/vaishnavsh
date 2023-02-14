@@ -4,8 +4,6 @@ import ProjectInfo from './ProjectData'
 import Project from './Project'
 import Heading from '../Heading/Heading'
 
-import projectOne from '../../assets/projects/project1.png'
-import projectTwo from '../../assets/projects/project2.png'
 
 const projectsList:ProjectInfo[] = [
   {
@@ -15,7 +13,6 @@ const projectsList:ProjectInfo[] = [
     stack: ["Three Js","Vite","HTML","CSS"],
     source: "https://github.com/vaishnav/threejs_rockets",
     demo: "https://vaishnav.github.io/threejs_rockets/",
-    image: projectOne
   },
   {
     name: "Maze Generator/Solver",
@@ -24,7 +21,6 @@ const projectsList:ProjectInfo[] = [
     stack: ["Python","Pygame","DSA"],
     source: "https://github.com/vaishnav/maze_generator_solver",
     demo: "",
-    image: projectTwo
   },
   {
     name: "Three Js Rocket Scene",
@@ -33,7 +29,6 @@ const projectsList:ProjectInfo[] = [
     stack: ["Three Js","Vite","HTML","CSS"],
     source: "https://github.com/vaishnav/threejs_rockets",
     demo: "https://vaishnav.github.io/threejs_rockets/",
-    image: projectOne
   },
   {
     name: "Maze Generator/Solver",
@@ -42,7 +37,6 @@ const projectsList:ProjectInfo[] = [
     stack: ["Python","Pygame","DSA"],
     source: "https://github.com/vaishnav/maze_generator_solver",
     demo: "",
-    image: projectTwo
   },
   {
     name: "Three Js Rocket Scene",
@@ -51,7 +45,6 @@ const projectsList:ProjectInfo[] = [
     stack: ["Three Js","Vite","HTML","CSS"],
     source: "https://github.com/vaishnav/threejs_rockets",
     demo: "https://vaishnav.github.io/threejs_rockets/",
-    image: projectOne
   },
   {
     name: "Maze Generator/Solver",
@@ -60,7 +53,6 @@ const projectsList:ProjectInfo[] = [
     stack: ["Python","Pygame","DSA"],
     source: "https://github.com/vaishnav/maze_generator_solver",
     demo: "",
-    image: projectTwo
   }
 ]
 
