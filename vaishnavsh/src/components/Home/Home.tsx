@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import './Home.scss'
 import Table from '../Table/Table'
 import Contact from '../Contact/Contact';
+import Heading from '../Heading/Heading';
 
 import { FiMail } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
@@ -40,9 +41,7 @@ const Home = () => {
         </div>
       </div>
       <div className="container mid-section">
-        <h1>
-          I am a Technology Enthusiast and like to work on real world projects. I've built things in the fields of web developemnt and 3D art. 
-        </h1>
+        <Heading header='My Skills' info='I like to build things on the WEB and 3D Space'></Heading>
       </div>
       <div>
         <Contact></Contact>

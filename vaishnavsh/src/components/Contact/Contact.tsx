@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './Contact.scss'
 import emailjs from '@emailjs/browser';
+import Heading from '../Heading/Heading';
 
 const Contact = () => {
   const [name,setName] = useState('')
@@ -27,7 +28,7 @@ const Contact = () => {
   return (
     <div className='container'>
       <form ref={form} onSubmit={sendEmail} className="contact-form">
-        <h1>Lets <span>Connect</span></h1>
+        <Heading header='Lets Connect' info='Drop me a message, would love to talk to you'></Heading>
         <label>Tell me about yourself!</label>
         <input type="text" name="user_name" placeholder="Your Name" className='contact-box' value={name} onChange={(e)=>setName(e.target.value)}/>
         <input type="email" name="user_email" placeholder="Your Email" className='contact-box' value={mail} onChange={(e)=>setMail(e.target.value)}/>
