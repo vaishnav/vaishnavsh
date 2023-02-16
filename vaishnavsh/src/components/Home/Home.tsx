@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import './Home.scss'
 import Table from '../Table/Table'
 import Contact from '../Contact/Contact';
-import Heading from '../Heading/Heading';
 import Projects from '../Projects/Projects';
+import Skills from '../Skills/Skills';
 
 import { FiMail } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
@@ -41,15 +41,9 @@ const Home = () => {
           <Table></Table>
         </div>
       </div>
-      <div className="container mid-section">
-        <Heading header='My Skills' info='I like to build things on the WEB and 3D Space'></Heading>
-      </div>
-      <div>
-        <Projects></Projects>
-      </div>
-      <div>
-        <Contact></Contact>
-      </div>
+      {/* <Skills></Skills> */}
+      <Projects></Projects>
+      <Contact></Contact>
     </>
   )
 }
