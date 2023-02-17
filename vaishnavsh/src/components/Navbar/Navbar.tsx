@@ -18,7 +18,8 @@ const Navbar = () => {
         <a href="#projects"><AiOutlineFundProjectionScreen className='nav-icon'/></a>
         {/* <Link to="/gallery"><BsBox className='nav-icon'/></Link> */}
         <a href="#contact"><TbMessage className='nav-icon'/></a>
-        <Link to="/resume"><HiOutlineDocumentText className='nav-icon'/></Link>
+        <a href='https://raw.githubusercontent.com/vaishnav/vaishnavsh/main/vaishnavsh/src/assets/resume.pdf'
+          target="_blank" ><HiOutlineDocumentText className='nav-icon'/></a>
       </div>
 
       <div className='desktop-view'>
@@ -26,7 +27,8 @@ const Navbar = () => {
         <a href="#projects" className='nav-element'>Projects</a>
         {/* <Link to="/gallery" className='nav-element'>3D Art</Link> */}
         <a href="#contact" className='nav-element'>Contact</a>
-        <Link to="/resume" className='nav-element'>Resume</Link>
+        <a href='https://raw.githubusercontent.com/vaishnav/vaishnavsh/main/vaishnavsh/src/assets/resume.pdf'
+          target="_blank" className='nav-element'>Resume</a>
       </div>
     </nav>
   )
