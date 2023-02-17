@@ -13,7 +13,6 @@ import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
 import Gallery from './components/Gallery/Gallery';
 import Contact from './components/Contact/Contact';
-import Resume from './components/Resume/Resume';
 
 function App() {
 
@@ -25,7 +24,6 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
     </Router>
