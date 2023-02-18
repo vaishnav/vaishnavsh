@@ -19,7 +19,7 @@ const Project = (props:ProjectProps) => {
     }
 
     if(project.demo != ""){
-        deployedIcon = <a href={project.source} target="_blank"><HiExternalLink></HiExternalLink></a>
+        deployedIcon = <a href={project.demo} target="_blank"><HiExternalLink></HiExternalLink></a>
     } else {
         deployedIcon = null
     }
