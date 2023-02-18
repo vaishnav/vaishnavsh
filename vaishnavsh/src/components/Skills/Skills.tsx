@@ -5,8 +5,8 @@ import './Skills.scss'
 
 const Skills = () => {
   return (
-    <div className="container">
-      <Heading header='My Skills' info='I like to build things on the WEB and 3D Space'></Heading>
+    <div className="container" id='skills'>
+      <Heading header='My Skills' info='I like to build things on the WEB and inside 3D Space'></Heading>
     </div>
   )
 }
