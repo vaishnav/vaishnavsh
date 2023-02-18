@@ -2,6 +2,7 @@
 
 .header {
     display: flex;
+    height: 100vh;
 
     .left {
         margin-top: 15%;
@@ -60,14 +61,18 @@
 
 
 @media all and (max-width:755px){
-    .left {
-        text-align: center;
-        margin-top: 80px !important;
-        .header-quick-nav {
-            justify-content: center;
+    .header {
+        height: 100vh;
+        .left {
+            text-align: center;
+            margin-top: 0px !important;
+            padding-top: 180px;
+            .header-quick-nav {
+                justify-content: center;
+            }
         }
-    }
-    .right {
-        display: none;
+        .right {
+            display: none;
+        }
     }
 }
