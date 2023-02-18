@@ -8,6 +8,7 @@ import {GoLightBulb} from 'react-icons/go'
 import {TbMessage} from 'react-icons/tb'
 import {HiOutlineDocumentText} from 'react-icons/hi'
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
+import {ImBlog} from 'react-icons/im'
 
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState('#')
@@ -20,6 +21,7 @@ const Navbar = () => {
         <a href="#contact"><TbMessage className='nav-icon'/></a>
         <a href='https://raw.githubusercontent.com/vaishnav/vaishnavsh/main/vaishnavsh/src/assets/resume.pdf'
           target="_blank" ><HiOutlineDocumentText className='nav-icon'/></a>
+        <a href="https://vaishnavsh.hashnode.dev/" target='_blank'><ImBlog className='nav-icon'></ImBlog></a>
       </div>
 
       <div className='desktop-view'>
@@ -29,6 +31,7 @@ const Navbar = () => {
         <a href="#contact" className='nav-element'>Contact</a>
         <a href='https://raw.githubusercontent.com/vaishnav/vaishnavsh/main/vaishnavsh/src/assets/resume.pdf'
           target="_blank" className='nav-element'>Resume</a>
+        <a href="https://vaishnavsh.hashnode.dev/" target="_blank" className='nav-element'>Blog</a>
       </div>
     </nav>
   )
