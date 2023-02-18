@@ -57,3 +57,17 @@
         }
     }
 }
+
+
+@media all and (max-width:755px){
+    .left {
+        text-align: center;
+        margin-top: 80px !important;
+        .header-quick-nav {
+            justify-content: center;
+        }
+    }
+    .right {
+        display: none;
+    }
+}
