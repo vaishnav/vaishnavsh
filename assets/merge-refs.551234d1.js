@@ -1,1 +1,0 @@
-function s(){for(var t=[],e=0;e<arguments.length;e++)t[e]=arguments[e];var n=t.filter(Boolean);if(n.length<=1){var o=n[0];return o}return function(f){n.forEach(function(r){typeof r=="function"?r(f):r&&(r.current=f)})}}export{s as m};
