@@ -16,7 +16,7 @@ import { FaArtstation } from 'react-icons/fa'
 const Home = () => {
   return (
     <>
-      <div className="container header">
+      <div className="header">
         <div className="left">
           <h4>
             Hi, my name is 
