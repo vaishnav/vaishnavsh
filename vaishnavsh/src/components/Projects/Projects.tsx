@@ -7,6 +7,14 @@ import Heading from '../Heading/Heading'
 
 const projectsList:ProjectInfo[] = [
   {
+    name: "Portfolio Website",
+    projectType: "React and Spline Project",
+    description: "Interactive portfolio built with React, TypeScript, and 3D design from Spline.",
+    stack: ["TypeScript", "React", "Vite", "SASS"],
+    source: "https://github.com/vaishnav/vaishnavsh",
+    demo: "https://vaishnavsh.com/",
+  },
+  {
     name: "Three Js Rocket Scene",
     projectType: "Three Js Project",
     description: "3D WebApp, users can look around and interact in a 3D environment on a browser. Integration of 3D Elements with HTML",
@@ -15,11 +23,19 @@ const projectsList:ProjectInfo[] = [
     demo: "https://vaishnav.github.io/threejs_rockets/",
   },
   {
-    name: "Twitter Like Social Media Platform",
+    name: "Interactive 3D scene",
     projectType: "",
-    description: "A text based social network, along with support for posting images and user interaction like following other users or liking of posts.",
-    stack: ["Django","Database","HTML","CSS"],
-    source: "https://github.com/sudoharshita16/Social-Network",
+    description: "3D WebApp, users can look around and interact in the browser",
+    stack: ["Three Js","Vite"],
+    source: "https://github.com/vaishnav/threejs_scene",
+    demo: "https://vaishnav.github.io/threejs_scene/",
+  },
+  {
+    name: "Maze Generator/Solver",
+    projectType: "Path Finding Algorithms Project",
+    description: "Generating mazes with the help of python and solving them with the help of different path finding algorithms",
+    stack: ["Python","Pygame","DSA"],
+    source: "https://github.com/vaishnav/maze_generator_solver",
     demo: "",
   },
   {
@@ -37,22 +53,6 @@ const projectsList:ProjectInfo[] = [
     stack: ["Beautiful-Soup","Django"],
     source: "https://github.com/vaishnav/SearchEngine",
     demo: "",
-  },
-  {
-    name: "Maze Generator/Solver",
-    projectType: "Path Finding Algorithms Project",
-    description: "Generating mazes with the help of python and solving them with the help of different path finding algorithms",
-    stack: ["Python","Pygame","DSA"],
-    source: "https://github.com/vaishnav/maze_generator_solver",
-    demo: "",
-  },
-  {
-    name: "Interactive 3D scene",
-    projectType: "",
-    description: "3D WebApp, users can look around and interact in the browser",
-    stack: ["Three Js","Vite"],
-    source: "https://github.com/vaishnav/threejs_scene",
-    demo: "https://vaishnav.github.io/threejs_scene/",
   }
 ]
 
