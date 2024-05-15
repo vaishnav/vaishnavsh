@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
+
 import './Home.scss'
 import Table from '../Table/Table'
 import Contact from '../Contact/Contact';
@@ -38,7 +41,14 @@ const Home = () => {
           {/* <Link to="/contact" className='default-button'>Contact</Link> */}
         </div>
         <div className="right">
-          <Table></Table>
+          <Canvas>
+            <pointLight position={[10, 10, 10]} />
+            <mesh>
+              <sphereGeometry />
+              <meshStandardMaterial color="red" />
+            </mesh>
+            <OrbitControls />
+          </Canvas>
         </div>
       </div>
       {/* <Skills></Skills> */}
