@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls, useGLTF } from '@react-three/drei'
+import { Object3D, BufferGeometry, Mesh } from 'three';
 
 import './Home.scss'
 import Table from '../Table/Table'
@@ -15,8 +16,18 @@ import { FiGithub } from 'react-icons/fi';
 import { FiInstagram } from 'react-icons/fi';
 import { FaArtstation } from 'react-icons/fa'
 
+function getGeometry(object: Object3D<THREE.Event>): BufferGeometry | undefined {
+  return object instanceof Mesh ? object.geometry  as BufferGeometry: undefined;
+}
+
+// function getGeometry is designed to check if a given object is an instance of the Mesh class from the Three.js library.
+// If the object is indeed a Mesh, the function returns its geometry as a BufferGeometry type. 
+// If the object is not a Mesh, the function returns undefined.
 
 const Home = () => {
+  const { nodes } = useGLTF('src/assets/Desk.glb')
+  console.log(nodes);
+  
   return (
     <>
       <div className="header">
@@ -43,9 +54,9 @@ const Home = () => {
         <div className="right">
           <Canvas>
             <pointLight position={[10, 10, 10]} />
-            <mesh>
-              <sphereGeometry />
-              <meshStandardMaterial color="red" />
+            <mesh geometry={getGeometry(nodes.Desk)} position={[0.9, 0.34, -1.47]} rotation={[0, 0.14, 0]}>
+              <meshStandardMaterial color="white" />
+              {/* <meshBasicMaterial map={bakedTexture} map-flipY={false} /> */}
             </mesh>
             <OrbitControls />
           </Canvas>
