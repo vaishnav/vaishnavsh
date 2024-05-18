@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, useGLTF } from '@react-three/drei'
+import { OrbitControls, useGLTF, useTexture } from '@react-three/drei'
 import { Object3D, BufferGeometry, Mesh } from 'three';
 
 import './Home.scss'
@@ -24,10 +24,22 @@ function getGeometry(object: Object3D<THREE.Event>): BufferGeometry | undefined 
 // If the object is indeed a Mesh, the function returns its geometry as a BufferGeometry type. 
 // If the object is not a Mesh, the function returns undefined.
 
-const Home = () => {
+const Model = () => {
+  // Need to create this function as useTexture cannot be used outside the cavas component and will throw error like 
+  // Hooks can only be used within the Canvas component!
   const { nodes } = useGLTF('src/assets/Desk.glb')
-  console.log(nodes);
-  
+  // console.log(nodes);
+  const bakedTexture = useTexture('src/assets/BakedB.jpg')
+  return (
+    <>
+      <mesh geometry={getGeometry(nodes.Desk)} position={[0.9, 0.34, -1.47]} rotation={[0, 0.14, 0]}>
+        <meshBasicMaterial map={bakedTexture} map-flipY={false} />
+      </mesh>
+    </>
+  )
+}
+
+const Home = () => {
   return (
     <>
       <div className="header">
@@ -54,10 +66,7 @@ const Home = () => {
         <div className="right">
           <Canvas>
             <pointLight position={[10, 10, 10]} />
-            <mesh geometry={getGeometry(nodes.Desk)} position={[0.9, 0.34, -1.47]} rotation={[0, 0.14, 0]}>
-              <meshStandardMaterial color="white" />
-              {/* <meshBasicMaterial map={bakedTexture} map-flipY={false} /> */}
-            </mesh>
+            <Model />
             <OrbitControls />
           </Canvas>
         </div>
